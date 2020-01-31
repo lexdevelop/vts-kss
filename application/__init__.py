@@ -30,5 +30,10 @@ except OSError:
 db = SQLAlchemy(app)
 migrate = Migrate(app=app, db=db)
 
+# Register blueprints
+with app.app_context():
+    from .main import main_routes
+    app.register_blueprint(main_routes.main_bp)
+
 if __name__ == '__main__':
     app.run()
