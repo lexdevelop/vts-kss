@@ -10,6 +10,8 @@ flask = "*"
 python-dotenv = "*"
 flask-migrate = "*"
 flask-sqlalchemy = "*"
+flask-login = "*"
+flask-wtf = "*"
 
 [requires]
 python_version = "3.6"

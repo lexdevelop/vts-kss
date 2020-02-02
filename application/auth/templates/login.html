@@ -1,0 +1,45 @@
+{% extends 'anonymous-layout.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row h-100">
+        <div class="col-lg-6 offset-lg-3 my-auto">
+            <div class="card text-white bg-dark mx-auto">
+                <div class="card-header">KSS - Login</div>
+                <div class="card-body">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" class="mx-auto d-block"/>
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">{{ message }}</div>
+                        {% endfor -%}
+                    {% endif %}
+                    {% endwith %}
+                    <form action="" method="post" novalidate>
+                        {{ form.hidden_tag() }}
+                        <div class="form-group">
+                            {{ form.username.label }}
+                            {{ form.username(class_="form-control") }}
+                            {% for error in form.username.errors %}
+                                <div class="alert alert-danger">{{ error }}</div>
+                            {% endfor %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.password.label }}
+                            {{ form.password(class_="form-control") }}
+                            {% for error in form.password.errors %}
+                                <div class="alert alert-danger">{{ error }}</div>
+                            {% endfor %}
+                        </div>
+                        <div class="checkbox">
+                            {{ form.remember_me() }} {{ form.remember_me.label }}
+                        </div>
+                        {{ form.submit(class_="btn btn-success") }}
+                    </form>
+                    <p class="card-text">If you don't have an account, go to <a href="{{ url_for('user_bp.register') }}">REGISTER</a> page to create one.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
