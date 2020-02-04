@@ -1,0 +1,33 @@
+{
+  "model": "User",
+  "data": [
+    {
+      "username": "user1",
+      "email": "user1@example.com",
+      "first_name": "First 1",
+      "last_name": "Last 1",
+      "password": "user1"
+    },
+    {
+      "username": "user2",
+      "email": "user2@example.com",
+      "first_name": "First 2",
+      "last_name": "Last 2",
+      "password": "user2"
+    },
+    {
+      "username": "user3",
+      "email": "user3@example.com",
+      "first_name": "First 3",
+      "last_name": "Last 3",
+      "password": "user3"
+    },
+    {
+      "username": "user4",
+      "email": "user4@example.com",
+      "first_name": "First 4",
+      "last_name": "Last 4",
+      "password": "user4"
+    }
+  ]
+}

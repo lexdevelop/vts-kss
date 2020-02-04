@@ -41,10 +41,12 @@ with app.app_context():
     from .auth import auth_routes
     from .user import user_routes
     from .exam import exam_routes
+    from .cli import cli_bp
     app.register_blueprint(main_routes.main_bp)
     app.register_blueprint(auth_routes.auth_bp)
     app.register_blueprint(user_routes.user_bp)
     app.register_blueprint(exam_routes.exam_bp)
+    app.register_blueprint(cli_bp)
 
 if __name__ == '__main__':
     app.run()
