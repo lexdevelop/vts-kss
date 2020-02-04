@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        {{ form.question_title.label }}
+        {{ form.question_title(class_="form-control") }}
+        {% for error in form.question_title.errors %}
+        <div class="alert alert-danger">{{ error }}</div>
+        {% endfor %}
+    </div>
+    {% for error in form.answers.errors %}
+        <div class="alert alert-danger">{{ error }}</div>
+    {% endfor %}
+    {% for l in form.answers %}
+        <div class="form-group">
+            {{ l.form.hidden_tag() }}
+            {{ l.form.answer_title.label}}
+            {{ l.form.answer_title(class_="form-control") }}
+            <div class="form-check form-check-inline">
+                {{ l.form.correct(class_="form-check-input") }}
+                {{ l.form.correct.label(class_="form-check-label") }}
+            </div>
+            {% for error in l.form.answer_title.errors %}
+                <div class="alert alert-danger">{{ error }}</div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+    {{ form.submit(class_="btn btn-success") }}
+</form>
+{% endblock %}

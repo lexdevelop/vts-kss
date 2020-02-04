@@ -1,14 +1,14 @@
 <nav class="navbar navbar-expand-lg navbar-expand-md fixed-top navbar-dark bg-primary">
-  <a class="navbar-brand" href="/">VTS-KSS</a>
+  <a class="navbar-brand" href="{{ url_for('main_bp.home') }}">VTS-KSS</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active"><a class="nav-link" href="/">Dashboard <span class="sr-only">(current)</span></a></li>
-      <li class="nav-item"><a class="nav-link" href="/">My exams <span class="sr-only"></span></a></li>
-      <li class="nav-item"><a class="nav-link" href="/">My questions <span class="sr-only"></span></a></li>
+      <li class="nav-item active"><a class="nav-link" href="{{ url_for('main_bp.home') }}">Dashboard <span class="sr-only">(current)</span></a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ url_for('exam_bp.exam_list') }}">My exams <span class="sr-only"></span></a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ url_for('exam_bp.question_list') }}">Questions <span class="sr-only"></span></a></li>
     </ul>
     <ul class="navbar-nav navbar-right">
       <li><a class="nav-link" href="{{ url_for('auth_bp.logout') }}">Logout</a></li>

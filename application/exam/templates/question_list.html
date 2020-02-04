@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1>Questions:</h1>
+    <a href="{{ url_for('exam_bp.create_question') }}" class="btn btn-success">New question</a>
+    <hr>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Question</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for question in questions %}
+            <tr class="table-dark">
+              <td>{{ question.id }}</td>
+              <td>{{ question.question_title }}</td>
+              <td>
+                  <a href="{{ url_for('exam_bp.edit_question', id=question.id) }}" class="btn btn-success">Edit</a>
+                  <a href="{{ url_for('exam_bp.delete_question', id=question.id) }}" class="btn btn-danger">Delete</a>
+              </td>
+            </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+{% endblock %}
