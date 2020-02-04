@@ -1,0 +1,425 @@
+{
+  "model": "Question",
+  "data": [
+    {
+      "question_title": "Zatvoreni sistemi su u prednosti u odnosu na otvorene zbog ?",
+      "answers": [
+        {
+          "answer_title": "Znatno boljih performansi",
+          "correct": false
+        },
+        {
+          "answer_title": "Manje cene",
+          "correct": false
+        },
+        {
+          "answer_title": "Povećane sigurnosti sistema",
+          "correct": true
+        },
+        {
+          "answer_title": "Nemaju prednosti",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Komponeta pripada otvorenom sistemu ako zadovoljava ?",
+      "answers": [
+        {
+          "answer_title": "Portabilnost, skalabilnost i interoperabilnost",
+          "correct": false
+        },
+        {
+          "answer_title": "Unapred donete standarde, koji su otvorenog tipa, tako da svako može da ih dopunjuje i menja",
+          "correct": false
+        },
+        {
+          "answer_title": "Dokumentovan hardver i softver",
+          "correct": false
+        },
+        {
+          "answer_title": "Portabilnost, skalabilnost, interoperabilnost,  standarde, učešće u njihovom kreiranju i korišćenju",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question_title": "Kako izgleda proces donošenja otvorenog standarda ?",
+      "answers": [
+        {
+          "answer_title": "Zajedničko komentarisanje putem RFC dokumenata",
+          "correct": false
+        },
+        {
+          "answer_title": "On se nikada ne donosi jer je stalno otvoren i dostupan za dopune i izmene",
+          "correct": false
+        },
+        {
+          "answer_title": "Zadavanje zahteva za novim standardom, njegova specifikacija, komentarisanje i usaglašavanje",
+          "correct": true
+        },
+        {
+          "answer_title": "Priprema standarda od strane IEEE, njegovo komentarisanje (RFC) i donošenje",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Kako se dele organizacije koje utiču na razvoj i donošenje standarda ?",
+      "answers": [
+        {
+          "answer_title": "Otvorene i zatvorene",
+          "correct": false
+        },
+        {
+          "answer_title": "De facto i de jure organizacije",
+          "correct": false
+        },
+        {
+          "answer_title": "Minimalne, srednje i maksimalne",
+          "correct": false
+        },
+        {
+          "answer_title": "Javne, korisničke i industrijske",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question_title": "Šta je to P2P (peer-to-peer) računarstvo ?",
+      "answers": [
+        {
+          "answer_title": "Mreža ravnopravnih računara",
+          "correct": true
+        },
+        {
+          "answer_title": "Deljenje rečunarskih resursa i usluga pomoću direktne rezmene",
+          "correct": true
+        },
+        {
+          "answer_title": "Jedna vrsta zatvorenog sistema međusobno povezanih računara",
+          "correct": false
+        },
+        {
+          "answer_title": "Jedinstven softverski paket",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Koje su osnovne prednost P2P (peer-to-peer) računarstva ?",
+      "answers": [
+        {
+          "answer_title": "Eliminacija uskih grla u mreži računara",
+          "correct": true
+        },
+        {
+          "answer_title": "Veća bezbednost sistema",
+          "correct": false
+        },
+        {
+          "answer_title": "Omogućuje brži rad sistema",
+          "correct": false
+        },
+        {
+          "answer_title": "Eliminacija rizika od otkaza sistema",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question_title": "Iz kojih se slojeva sastoji konceptualni model računarskog sistema ?",
+      "answers": [
+        {
+          "answer_title": "Hardver, operativi sistem, aplikacija, korisnik",
+          "correct": false
+        },
+        {
+          "answer_title": "Fizički, sloj podataka, mrežni, transportni, sloj sesije, prezentacioni i aplikacioni",
+          "correct": false
+        },
+        {
+          "answer_title": "Hardver, sistemski softver, uslužni softveri,  aplikacija, korisnički interfej",
+          "correct": false
+        },
+        {
+          "answer_title": "Mikroprocesor, hardver, operativi sistem, soft.alati, prog.jezici, aplikacija, korisnik",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question_title": "Šta je dovelo do pojave klijent serverske tehnologije ?",
+      "answers": [
+        {
+          "answer_title": "Pad cena, povećanje resursa, standardi i razvoj objektnih tehnologija",
+          "correct": true
+        },
+        {
+          "answer_title": "Velika ponuda i potražnja rač.uređaja i razvoj mrežnih tehnologija",
+          "correct": false
+        },
+        {
+          "answer_title": "Pojava Interneta i razvoj WEB tehnologija",
+          "correct": false
+        },
+        {
+          "answer_title": "Razvoj otvorenih sistema i distribuiranih baza podataka",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Šta je minimalno potrebno za primenu klijent server arhitekture ?",
+      "answers": [
+        {
+          "answer_title": "Dva međusobno povezana računara sa odgovarajućim mrežnim softverom koji radi na njima",
+          "correct": true
+        },
+        {
+          "answer_title": "Veći broj međusobno umreženih računara",
+          "correct": false
+        },
+        {
+          "answer_title": "Klijentski i serverski računar",
+          "correct": false
+        },
+        {
+          "answer_title": "Samo jedan računar na kome radi odgovarajuči softver",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Koje su osnovne prednosti klijent server tehnologije ?",
+      "answers": [
+        {
+          "answer_title": "Jednostavnost i brzina uspostavljanja veze",
+          "correct": false
+        },
+        {
+          "answer_title": "Jedinstven softverski paket ",
+          "correct": false
+        },
+        {
+          "answer_title": "Maskirani fizički prestup resursima",
+          "correct": true
+        },
+        {
+          "answer_title": "Pristup ogromnoj količini podataka i integrisani servisi na jednom mestu",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question_title": "Koji principi treba da budu zadovoljeni da bi klijent server tehnologija bila uspešna ?",
+      "answers": [
+        {
+          "answer_title": "Hardverska i softverska nezavisnost",
+          "correct": true
+        },
+        {
+          "answer_title": "Velika ponuda i potražnja rač.uređaja i razvoj brzih mrežnih tehnologija",
+          "correct": false
+        },
+        {
+          "answer_title": "Pojava Interneta i razvoj WEB tehnologija",
+          "correct": false
+        },
+        {
+          "answer_title": "Otvoren prestup servisima na mreži",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question_title": "Koja tvrdnja nije ispravna za radnu stanicu ?",
+      "answers": [
+        {
+          "answer_title": "može da bude samo klijent",
+          "correct": false
+        },
+        {
+          "answer_title": "može da bude samo server",
+          "correct": false
+        },
+        {
+          "answer_title": "može istovremeno da je klijent i server",
+          "correct": false
+        },
+        {
+          "answer_title": "ne može istovremeno da bude i klijent i server",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question_title": "Šta je to RPC (Remote Procedure Call) ?",
+      "answers": [
+        {
+          "answer_title": "Komunikacioni protokol između klijenta i servera",
+          "correct": false
+        },
+        {
+          "answer_title": "Pozivna procedura koja se nalazi na serveru",
+          "correct": false
+        },
+        {
+          "answer_title": "Program koji omogućava poziv bilo koje procedure iz mrežnog sistema",
+          "correct": true
+        },
+        {
+          "answer_title": "Daljinski poziv neke procedure",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Šta predstavlja komponetni model ?",
+      "answers": [
+        {
+          "answer_title": "Model programiranja u kome je implementiran mehanizam izvrašavanja transakcija",
+          "correct": false
+        },
+        {
+          "answer_title": "Komponente u kojima je implementiran mehanizam izvrašavanja transakcija ",
+          "correct": true
+        },
+        {
+          "answer_title": "Programska aplikacija koja se sastoji od komponenti",
+          "correct": false
+        },
+        {
+          "answer_title": "Računarska celina u kojoj možemo tačno definisati svaku koponentu sistema",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Iz kojih se programa sastoji OLE ?",
+      "answers": [
+        {
+          "answer_title": "Pregledanje (viewer) i izvršavanje (launcher)",
+          "correct": true
+        },
+        {
+          "answer_title": "Unošenje (Input), pregledanje (viewer) i izvršavanje (launcher)",
+          "correct": false
+        },
+        {
+          "answer_title": "Unošenje (Input), pregledanje (viewer), izvršavanje (launcher) i prikazivanje (presentation)",
+          "correct": false
+        },
+        {
+          "answer_title": "Unošenje zahteva(Input) i izdavanje izlaza (Output)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Koje komponente su neophodne kod Java platforme ?",
+      "answers": [
+        {
+          "answer_title": "Java virtuelna mašina",
+          "correct": false
+        },
+        {
+          "answer_title": "WEB čitač i Java Script podršku",
+          "correct": false
+        },
+        {
+          "answer_title": "Java virtuelna mašina i Java aplikacioni programski interfejs",
+          "correct": true
+        },
+        {
+          "answer_title": "Klijentski i serverski Java program",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Šta predstavlja Java aplet ?",
+      "answers": [
+        {
+          "answer_title": "Java virtuelnu mašinu",
+          "correct": false
+        },
+        {
+          "answer_title": "WEB komponenta koja se izvršava na serveru",
+          "correct": false
+        },
+        {
+          "answer_title": "Bilo koji klijentski i serverski Java program",
+          "correct": false
+        },
+        {
+          "answer_title": "Klijentska aplikacija koju izvršava JAVA virtuelna mašina u WEB čitaču",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question_title": "Koje su glavne prednosti EJB komponente ?",
+      "answers": [
+        {
+          "answer_title": "To je industrijski standard koji omogućava brzi razvoj aplikacije",
+          "correct": true
+        },
+        {
+          "answer_title": "Nije potrebno kompajliranje i instaliranje EJB komponente",
+          "correct": false
+        },
+        {
+          "answer_title": "Ista EJB komponenta se koristi kod server i klijenta",
+          "correct": false
+        },
+        {
+          "answer_title": "Omogućava laku portabilnost aplikacije",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question_title": "Koje EJB komponente postoje ?",
+      "answers": [
+        {
+          "answer_title": "Univerzalne i jednostavne",
+          "correct": false
+        },
+        {
+          "answer_title": "Session, message driven i entity beam",
+          "correct": true
+        },
+        {
+          "answer_title": "Portabilne, skalabilne i interoperatibilne",
+          "correct": false
+        },
+        {
+          "answer_title": "Zavisne i nezavisne",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Šta je to SOAP (Simple Object Access Protocol) ?",
+      "answers": [
+        {
+          "answer_title": "Univerzalni protokol koji koristi CORBA model",
+          "correct": false
+        },
+        {
+          "answer_title": "Jedinstven protokol za razmenu EJB komponenti",
+          "correct": false
+        },
+        {
+          "answer_title": "Protokol za pristupanje i preuzimanje komponentnih modela",
+          "correct": false
+        },
+        {
+          "answer_title": "Protokol koji koristi XML i HTTP za prenos podataka između klijentske i serverske aplikacije",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

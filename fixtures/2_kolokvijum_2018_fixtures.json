@@ -1,0 +1,425 @@
+{
+  "model": "Question",
+  "data": [
+    {
+      "question_title": "Koje su osnovne prednosti Data-Base klijent server arhutektura ? (2)",
+      "answers": [
+        {
+          "answer_title": "Pretraživanje i sortiranje velikih baza podataka",
+          "correct": true
+        },
+        {
+          "answer_title": "Definišu način smeštanja podataka na serveru za različite baze podataka",
+          "correct": false
+        },
+        {
+          "answer_title": "Određuju strukturnu organizaciju klijent server baze podataka na server i klijentu",
+          "correct": false
+        },
+        {
+          "answer_title": "Smanjuju mrežni saobraćaj",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question_title": "Koja je glavna osobina Proces per client arhitekture baze podataka ?",
+      "answers": [
+        {
+          "answer_title": "Podržava mali broj klijenata sa jako velikim, dugačkim transakcijama na bazi podataka",
+          "correct": false
+        },
+        {
+          "answer_title": "Podržava veliki broj klijenata koji zahtevaju jako kratke transakcije na bazi podataka.",
+          "correct": false
+        },
+        {
+          "answer_title": "Pogodna za obradu veoma velikih baza podataka.",
+          "correct": false
+        },
+        {
+          "answer_title": "Jako bezbedna arhitektura i potpuno nezavisna od izvršavanja zahteva drugih klijenata",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question_title": "Koja od sledećih komponenti ne pripada klasičnom DBMS-u ?",
+      "answers": [
+        {
+          "answer_title": "Analizator upita.",
+          "correct": false
+        },
+        {
+          "answer_title": "Alat za kreiranje izveštaja",
+          "correct": true
+        },
+        {
+          "answer_title": "Interpretator SQL koda",
+          "correct": false
+        },
+        {
+          "answer_title": "Interfejs za aplikacije",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Šta omogućavaju napredne mogućnosti u SQL jeziku ?",
+      "answers": [
+        {
+          "answer_title": "Omogučava da se SQL naredbe mogu ubaciti u programske jezike opšte namene.",
+          "correct": true
+        },
+        {
+          "answer_title": "Daju podršku velikim i složenim SQL upitima.",
+          "correct": false
+        },
+        {
+          "answer_title": "Omogućavaju kontrolu transakcija u bazi podataka",
+          "correct": false
+        },
+        {
+          "answer_title": "Omogućavaju napredno pretraživanje velikih baza podataka.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Koji su osnovni modovi rada sa ADO (ActiveX Data Objects) ?",
+      "answers": [
+        {
+          "answer_title": "Konektovan i diskonektovan",
+          "correct": true
+        },
+        {
+          "answer_title": "Direktni i indirektini (posredni)",
+          "correct": false
+        },
+        {
+          "answer_title": "Microsoft i Java Database Connectivity",
+          "correct": false
+        },
+        {
+          "answer_title": "DAO (Data Access Objects) i RDO (Remote Data Objects)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Šta karakteriše klijent/server baze podataka ?",
+      "answers": [
+        {
+          "answer_title": "Brzi pristup podacima, snažni serveri i dobra veza",
+          "correct": false
+        },
+        {
+          "answer_title": "Efikasno pretraživanje baze podataka",
+          "correct": false
+        },
+        {
+          "answer_title": "Velike baze različitih multimedijalnih podataka",
+          "correct": false
+        },
+        {
+          "answer_title": "Transparentna lokacija, pristupačni podaci u bilo koje vreme, distribuirana obrada podataka",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question_title": "Koji je nivo odgovoran za usmeravanje paketa podataka u OSI modelu ?",
+      "answers": [
+        {
+          "answer_title": "Aplikativni",
+          "correct": false
+        },
+        {
+          "answer_title": "Transportni",
+          "correct": false
+        },
+        {
+          "answer_title": "Mrežni",
+          "correct": true
+        },
+        {
+          "answer_title": "Sloj poadata (Data-Link)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Koja tvrdnja nije tačna za Ipv4 protokol ?",
+      "answers": [
+        {
+          "answer_title": "IP je pouzdan protokol",
+          "correct": true
+        },
+        {
+          "answer_title": "IP je protokol bez potvrđivanja",
+          "correct": false
+        },
+        {
+          "answer_title": "IP je protokol bez uspostavljanja konekcije",
+          "correct": false
+        },
+        {
+          "answer_title": "IP predstavlja nepovezan protokol jer svaki paket nema nikakvu vezu sa ostalim paketima koji se šalju",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Koji je osnovni problem dvoslojne Client Server arhitekture?",
+      "answers": [
+        {
+          "answer_title": "Obezbeđivanje sigurnosti obrade podataka",
+          "correct": false
+        },
+        {
+          "answer_title": "Nemogućnost centralizovanog upravljanja",
+          "correct": false
+        },
+        {
+          "answer_title": "Nemogućnost distribuirane obrade podataka",
+          "correct": false
+        },
+        {
+          "answer_title": "Nedostatak skalabilnosti",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question_title": "Za šta služe servleti ?",
+      "answers": [
+        {
+          "answer_title": "Prilagođavaju RPC zahteve različitim bazama podataka",
+          "correct": false
+        },
+        {
+          "answer_title": "Omogućuju JDBC (Java Database Connectivity)",
+          "correct": false
+        },
+        {
+          "answer_title": "Vrše dinamičko generisanje Web sadržaja",
+          "correct": true
+        },
+        {
+          "answer_title": "Posebna vrsta servera u višeslojnim arhitekturama",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Kako se realizuje Connection Pooling kod aplikacionog servera ?",
+      "answers": [
+        {
+          "answer_title": "Putem distribuirane baze podataka",
+          "correct": false
+        },
+        {
+          "answer_title": "IIS (Internet Information Server) i COM+ objektima",
+          "correct": true
+        },
+        {
+          "answer_title": "Višenitnim (multithread) aplikacijama",
+          "correct": false
+        },
+        {
+          "answer_title": "RMI (Remote Method Invocation)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Za šta služe Server-Side Scripting jezici  ?",
+      "answers": [
+        {
+          "answer_title": "Za generisanje forme VIEW u okviru DBMS-a",
+          "correct": false
+        },
+        {
+          "answer_title": "Poseduju komande koje omogućavaju vezu sa SQL serverom",
+          "correct": false
+        },
+        {
+          "answer_title": "Za generisanje XML koda kod statičkih strana",
+          "correct": false
+        },
+        {
+          "answer_title": "Za generisanje HTML koda kod izrade dinamičkih strana",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question_title": "Koji su osnovni nedostaci Cloud Computing-a ? (2)",
+      "answers": [
+        {
+          "answer_title": "Cloud computing ne omogućava veći tempo inovacija",
+          "correct": false
+        },
+        {
+          "answer_title": "Veći troškovi početnog ulaganja",
+          "correct": false
+        },
+        {
+          "answer_title": "Istraživanja neprikladnih ili ilegalnih aktivnosti mogu biti nemoguća ili jako složena",
+          "correct": true
+        },
+        {
+          "answer_title": "Nemamo tačan uvid gde su podaci u oblaku smešteni",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question_title": "Kaoko se dele provajderi usluga kod Cloud Computinga ?",
+      "answers": [
+        {
+          "answer_title": "provajdere SaaS (Software), PaaS(Platform) i IaaS (Infrastructure)",
+          "correct": false
+        },
+        {
+          "answer_title": "provajdere infrastrukture i provajdere servisa",
+          "correct": true
+        },
+        {
+          "answer_title": "provajdere softvera, komunikacije i hardvera",
+          "correct": false
+        },
+        {
+          "answer_title": "provajdere Web aplikacija i Web servisa",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Prilikom definisanja ruta u frejmvorku Express metodi app.get() treba proslediti sledeće parametre?",
+      "answers": [
+        {
+          "answer_title": "Zahtev i odgovor (request i response)",
+          "correct": false
+        },
+        {
+          "answer_title": "Rutu u obliku stringa i callback funkciju",
+          "correct": true
+        },
+        {
+          "answer_title": "Rutu u obliku URL stringa i objekte request i response",
+          "correct": false
+        },
+        {
+          "answer_title": "Callback funkciju, objekat request i response",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Ukoliko u aplikaciji postoji ruta app.get('/hi/:param1', function(req,res){} ) i u veb čitaču je otkucan URL http://www.google.com/hi/there?qs1=you&qs2=tube. Vrednost parametara req.query je:",
+      "answers": [
+        {
+          "answer_title": "{ ?qs1 = you, qs2 = tube }",
+          "correct": false
+        },
+        {
+          "answer_title": "{ qs1 = 'you', qs2 = 'tube', param1 = 'there' }",
+          "correct": false
+        },
+        {
+          "answer_title": "{ qs1 = 'you', qs2 = 'tube' }",
+          "correct": true
+        },
+        {
+          "answer_title": "[qs1 = you, qs2 = tube]",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Koji od sledećih Internet protokola pripada  aplikacionom nivou ?",
+      "answers": [
+        {
+          "answer_title": "TCP",
+          "correct": false
+        },
+        {
+          "answer_title": "IP",
+          "correct": false
+        },
+        {
+          "answer_title": "ARP",
+          "correct": false
+        },
+        {
+          "answer_title": "TELNET",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question_title": "Šta od navedenog nije nodeJs modul ?",
+      "answers": [
+        {
+          "answer_title": "cookie-parser",
+          "correct": false
+        },
+        {
+          "answer_title": "npm",
+          "correct": true
+        },
+        {
+          "answer_title": "express",
+          "correct": false
+        },
+        {
+          "answer_title": "jade",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "Konzolna naredba npm install:",
+      "answers": [
+        {
+          "answer_title": "Inicijalizuje modul npm",
+          "correct": false
+        },
+        {
+          "answer_title": "Kreira fajl package.json u trenutnom direktorijumu",
+          "correct": false
+        },
+        {
+          "answer_title": "Instalira sve module potrebne za pokretanje projekta",
+          "correct": true
+        },
+        {
+          "answer_title": "Ne radi ništa",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question_title": "MEAN grupa tehnologija podrazumeva:",
+      "answers": [
+        {
+          "answer_title": "MongoDb, Express, Angular, NodeJS",
+          "correct": true
+        },
+        {
+          "answer_title": "MongoDb, Engular, Atom, Npm",
+          "correct": false
+        },
+        {
+          "answer_title": "MongoDb, Ejs, Angular, Npm",
+          "correct": false
+        },
+        {
+          "answer_title": "MongoDb, Ejs, Atom, NodeJS",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
