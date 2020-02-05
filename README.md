@@ -86,7 +86,49 @@ flask kss fixtures
 flask run
 ```
 
-### Notes
+## Notes
 Make sure that **SQLALCHEMY_DATABASE_URI** in .env file **never** use relative path like **sqlite:///app.db**
 
 Make sure that you are using **python 3.6**
+
+## Tests
+**Note: Make sure that container is up and runing (docker-compose ps)
+### Run test in docker container
+```bash
+docker-compose exec kss python -m unittest
+```
+### Run coverage in docker container
+```bash
+docker-compose exec kss coverage run --source=application/ -m unittest
+```
+
+### Show coverage in docker container
+```bash
+docker-compose exec kss coverage report
+```
+
+### Create coverage html files in docker container
+```bash
+docker-compose exec kss coverage html
+```
+
+### Run test on local pipenv environment
+**Note: Make sure that you are in virtual environment (pipenv shell)
+```bash
+python -m unittest
+```
+
+### Run coverage on local pipenv environment
+```bash
+coverage run --source=application/ -m unittest
+```
+
+### Show coverage on local pipenv environment
+```bash
+coverage report
+```
+
+### Create coverage html files on local pipenv environment
+```bash
+coverage html
+```

@@ -12,6 +12,7 @@ flask-migrate = "*"
 flask-sqlalchemy = "*"
 flask-login = "*"
 flask-wtf = "*"
+coverage = "*"
 
 [requires]
 python_version = "3.6"
