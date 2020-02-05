@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-3">Not authorized, 401</h1>
+    <p class="lead">You have no access to this page.</p>
+    {% if request.referrer %}
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{{ request.referrer }}" role="button">Go Back</a>
+    </p>
+    {% endif %}
+</div>
+{% endblock %}

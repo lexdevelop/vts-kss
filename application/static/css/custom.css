@@ -14,3 +14,15 @@ pre {
         box-shadow: none
     }
 }
+
+.correct-answer {
+    border: 1px solid #00a379;
+}
+
+.incorrect-answer {
+    border: 1px solid #d62c1a;
+}
+
+.not-marked-correct-answer {
+    border: 1px solid #c87f0a;
+}

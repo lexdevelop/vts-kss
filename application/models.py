@@ -1,3 +1,5 @@
+import random
+from sqlalchemy import func
 from werkzeug.security import generate_password_hash, check_password_hash
 from application import db, login_manager
 from flask_login import UserMixin
@@ -27,14 +29,6 @@ def load_user(user_id):
     return User.query.get(int(user_id))
 
 
-exam_question = db.Table('exam_question',
-                         db.Column('question_id', db.Integer, db.ForeignKey('question.id', ondelete="CASCADE"),
-                                   primary_key=True),
-                         db.Column('exam_id', db.Integer, db.ForeignKey('exam.id', ondelete="CASCADE"),
-                                   primary_key=True)
-                         )
-
-
 class Question(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     question_title = db.Column(db.String(200), nullable=False)
@@ -42,6 +36,21 @@ class Question(db.Model):
 
     def __repr__(self):
         return '<Question {}>'.format(self.question_title)
+
+    def count_records(self):
+        return self.query.count()
+
+    def random_questions(self):
+        return random.choice(self.query.all())
+
+    # This is not working with SQLite, it require additional math library installation
+    def optimized_random(self, limit):
+        return self.query.offset(
+            func.floor(
+                func.random() *
+                db.session.query(func.count(self.id))
+            )
+        ).limit(limit).all()
 
 
 class Answer(db.Model):
@@ -56,12 +65,9 @@ class Answer(db.Model):
 
 class Exam(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    exam_title = db.Column(db.String(120), nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id', ondelete="CASCADE"), nullable=False)
-    finished = db.Column(db.Boolean, default=False)
-    points = db.Column(db.Numeric(precision=8, scale=2), nullable=True)
     date = db.Column(db.DateTime, default=datetime.datetime.utcnow)
-    question = db.relationship('Question', secondary=exam_question, lazy=True)
+    result_payload = db.Column(db.PickleType)
 
     def __repr__(self):
         return '<Exam {}>'.format(self.exam_title)

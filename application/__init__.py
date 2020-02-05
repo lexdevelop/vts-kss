@@ -35,6 +35,9 @@ login_manager = LoginManager(app=app)
 # Import models so migration can detect changes
 from application.models import *
 
+# Import Jinja filters
+from .util import jinja_filters
+
 # Register blueprints
 with app.app_context():
     from .main import main_routes

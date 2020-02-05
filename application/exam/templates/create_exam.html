@@ -1,5 +1,32 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-<h1>New exam</h1>
+<form action="" method="post">
+    <div class="row">
+        {% for key, question in questions|dictsort %}
+        <div class="col-6">
+            <div class="card text-white bg-dark mb-3" style="max-width: 30rem;">
+                <div class="card-header">{{loop.index}}. {{ question.question_title }}</div>
+                <input type="hidden" name="question" value="{{question.id}}"/>
+                <div class="card-body">
+                    {% set shuffle_answers = question.answers|shuffle_answers %}
+                    {% for answer in shuffle_answers %}
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch{{ answer.id }}"
+                               name="answer" value="{{ answer.id }}">
+                        <label class="custom-control-label" for="customSwitch{{ answer.id }}">{{ answer.answer_title }}</label>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <hr>
+            <input type="submit" class="btn btn-success" name="submit" value="Submit"/>
+        </div>
+    </div>
+</form>
 {% endblock %}

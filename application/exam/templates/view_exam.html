@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="text-center">
+            <p class="correct-answer">Correct answer</p>
+            <p class="incorrect-answer">Incorrect answer</p>
+            <p class="not-marked-correct-answer">Not marked correct answer</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    {% for key, value in result_payload.items() %}
+    <div class="col-6">
+        <div class="card border-secondary mb-3" style="max-width: 30rem;">
+            <div class="card-header">{{loop.index}}. {{ value['question'] }}</div>
+            <div class="card-body">
+                {% for answer_key, answer in value['answers'].items() %}
+                    {% set answer_class = 'custom-control custom-checkbox' %}
+                    {% if answer['marked'] and answer['correct'] %}
+                        {% set answer_class = answer_class + ' correct-answer' %}
+                    {% elif answer['marked'] and not answer['correct'] %}
+                        {% set answer_class = answer_class + ' incorrect-answer' %}
+                    {% elif not answer['marked'] and answer['correct'] %}
+                        {% set answer_class = answer_class + ' not-marked-correct-answer' %}
+                    {% endif %}
+                <div class="{{ answer_class }}">
+                    {% if answer['marked'] %}
+                        <input type="checkbox" class="custom-control-input" id="customCheck{{ answer_key }}" disabled="" checked="">
+                    {% else %}
+                        <input type="checkbox" class="custom-control-input" id="customCheck{{ answer_key }}" disabled="">
+                    {% endif %}
+
+                    <label class="custom-control-label" for="customCheck{{ answer_key }}">{{ answer['answer'] }}</label>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
