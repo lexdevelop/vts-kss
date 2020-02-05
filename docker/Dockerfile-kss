@@ -1,0 +1,25 @@
+FROM python:3.6-alpine
+
+MAINTAINER Stefan Cvetkovic <stefanlex90@gmail.com>
+
+RUN apk --no-cache add build-base \
+                       autoconf \
+                       sqlite
+
+RUN pip install pipenv
+
+COPY ./Pipfile /app/
+COPY ./Pipfile.lock /app/
+
+WORKDIR /app
+
+RUN pipenv lock --requirements > /tmp/requirements.txt
+
+RUN pip install -r /tmp/requirements.txt
+
+COPY . /app
+
+RUN flask db upgrade
+RUN flask kss fixtures
+
+CMD ["flask", "run", "--host", "0.0.0.0", "--port", "5000"]
