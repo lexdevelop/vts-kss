@@ -88,3 +88,5 @@ flask run
 
 ### Notes
 Make sure that **SQLALCHEMY_DATABASE_URI** in .env file **never** use relative path like **sqlite:///app.db**
+
+Make sure that you are using **python 3.6**
